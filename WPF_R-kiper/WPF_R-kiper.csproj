@@ -9,11 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="View\images\table.png" />
+    <None Remove="OrdersFile\View\images\kotlet.png" />
+    <None Remove="Tables\View\images\table.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="View\images\table.png" />
+    <Resource Include="OrdersFile\View\images\kotlet.png" />
+    <Resource Include="Tables\View\images\table.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Tables\View\Tables.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>

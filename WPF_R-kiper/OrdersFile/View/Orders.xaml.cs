@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WPF_R_kiper.View
+namespace WPF_R_kiper.OrdersFile.View
 {
     /// <summary>
-    /// Interaction logic for Login.xaml
+    /// Interaction logic for Orders.xaml
     /// </summary>
-    public partial class Login : Window
+    public partial class Orders : Window
     {
-        public Login()
+        public Orders()
         {
             InitializeComponent();
         }
