@@ -9,12 +9,84 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="CheckFile\View\images\bill.png" />
+    <None Remove="CheckFile\View\images\Restaurant_bill.png" />
+    <None Remove="OrdersFile\View\images\brusketta.png" />
+    <None Remove="OrdersFile\View\images\cikenbluz.png" />
+    <None Remove="OrdersFile\View\images\cobansalati.png" />
+    <None Remove="OrdersFile\View\images\cugundursalati.png" />
+    <None Remove="OrdersFile\View\images\danabastirma.png" />
+    <None Remove="OrdersFile\View\images\dusbere.png" />
+    <None Remove="OrdersFile\View\images\fettucini.png" />
+    <None Remove="OrdersFile\View\images\gobeleksorbasi.png" />
+    <None Remove="OrdersFile\View\images\gobeleksorbasi2.png" />
+    <None Remove="OrdersFile\View\images\gurzesorbasi.png" />
+    <None Remove="OrdersFile\View\images\humus.png" />
+    <None Remove="OrdersFile\View\images\kartofsorbasi.png" />
+    <None Remove="OrdersFile\View\images\koksorbasi.png" />
     <None Remove="OrdersFile\View\images\kotlet.png" />
+    <None Remove="OrdersFile\View\images\lechemilkshake.png" />
+    <None Remove="OrdersFile\View\images\lulekebab.png" />
+    <None Remove="OrdersFile\View\images\martini.png" />
+    <None Remove="OrdersFile\View\images\mojito.png" />
+    <None Remove="OrdersFile\View\images\pendirler.png" />
+    <None Remove="OrdersFile\View\images\quzuantrikot.png" />
+    <None Remove="OrdersFile\View\images\quzubaldirqovurma.png" />
+    <None Remove="OrdersFile\View\images\quzukebab.png" />
+    <None Remove="OrdersFile\View\images\quzusoganet.png" />
+    <None Remove="OrdersFile\View\images\sezarsalati.png" />
+    <None Remove="OrdersFile\View\images\tavakababi.png" />
+    <None Remove="OrdersFile\View\images\terevezler.png" />
+    <None Remove="OrdersFile\View\images\toyuqlulesi.png" />
+    <None Remove="OrdersFile\View\images\toyuqruleti.png" />
+    <None Remove="OrdersFile\View\images\tunabaligisalati.png" />
+    <None Remove="OrdersFile\View\images\tursular.png" />
+    <None Remove="OrdersFile\View\images\watermelonslushie.png" />
+    <None Remove="OrdersFile\View\images\whine.png" />
+    <None Remove="OrdersFile\View\images\wisky.png" />
+    <None Remove="OrdersFile\View\images\xankebabi.png" />
+    <None Remove="OrdersFile\View\images\yunansalati.png" />
     <None Remove="Tables\View\images\table.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="CheckFile\View\images\bill.png" />
+    <Resource Include="CheckFile\View\images\Restaurant_bill.png" />
+    <Resource Include="OrdersFile\View\images\brusketta.png" />
+    <Resource Include="OrdersFile\View\images\cikenbluz.png" />
+    <Resource Include="OrdersFile\View\images\cobansalati.png" />
+    <Resource Include="OrdersFile\View\images\cugundursalati.png" />
+    <Resource Include="OrdersFile\View\images\danabastirma.png" />
+    <Resource Include="OrdersFile\View\images\dusbere.png" />
+    <Resource Include="OrdersFile\View\images\fettucini.png" />
+    <Resource Include="OrdersFile\View\images\gobeleksorbasi.png" />
+    <Resource Include="OrdersFile\View\images\gobeleksorbasi2.png" />
+    <Resource Include="OrdersFile\View\images\gurzesorbasi.png" />
+    <Resource Include="OrdersFile\View\images\humus.png" />
+    <Resource Include="OrdersFile\View\images\kartofsorbasi.png" />
+    <Resource Include="OrdersFile\View\images\koksorbasi.png" />
     <Resource Include="OrdersFile\View\images\kotlet.png" />
+    <Resource Include="OrdersFile\View\images\lechemilkshake.png" />
+    <Resource Include="OrdersFile\View\images\lulekebab.png" />
+    <Resource Include="OrdersFile\View\images\martini.png" />
+    <Resource Include="OrdersFile\View\images\mojito.png" />
+    <Resource Include="OrdersFile\View\images\pendirler.png" />
+    <Resource Include="OrdersFile\View\images\quzuantrikot.png" />
+    <Resource Include="OrdersFile\View\images\quzubaldirqovurma.png" />
+    <Resource Include="OrdersFile\View\images\quzukebab.png" />
+    <Resource Include="OrdersFile\View\images\quzusoganet.png" />
+    <Resource Include="OrdersFile\View\images\sezarsalati.png" />
+    <Resource Include="OrdersFile\View\images\tavakababi.png" />
+    <Resource Include="OrdersFile\View\images\terevezler.png" />
+    <Resource Include="OrdersFile\View\images\toyuqlulesi.png" />
+    <Resource Include="OrdersFile\View\images\toyuqruleti.png" />
+    <Resource Include="OrdersFile\View\images\tunabaligisalati.png" />
+    <Resource Include="OrdersFile\View\images\tursular.png" />
+    <Resource Include="OrdersFile\View\images\watermelonslushie.png" />
+    <Resource Include="OrdersFile\View\images\whine.png" />
+    <Resource Include="OrdersFile\View\images\wisky.png" />
+    <Resource Include="OrdersFile\View\images\xankebabi.png" />
+    <Resource Include="OrdersFile\View\images\yunansalati.png" />
     <Resource Include="Tables\View\images\table.png" />
   </ItemGroup>
 

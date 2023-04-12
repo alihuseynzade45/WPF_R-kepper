@@ -5,48 +5,152 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_R_kiper.OrdersFile.View"
         mc:Ignorable="d"
-        Title="Orders" Height="600" Width="1000">
-   
+        Title="Orders" Height="650" Width="900" Background="{StaticResource bck1}">
+
 
     <Grid>
-        <TabControl>
-            <TabItem  Header="Isti yeməklər">
+        <TabControl Background="{StaticResource bck1}">
+            <TabItem  Header="İsti yeməklər">
                 <Grid>
-                    <Button Style="{StaticResource PriceButtonStyle}" Background="LightGray" Margin="0,0,700,300" Height="150" Width="200">
-                        <Button.Content>
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="images/kotlet.png" Width="20" Height="20" Margin="0 0 5 0"/>
-                                <TextBlock Text="Buton Metni" VerticalAlignment="Center"/>
-                            </StackPanel>
-                        </Button.Content>
+
+                    <Button Style="{StaticResource OrderModel}" Margin="0,0,590,250" Height="250" Width="250" Click="KotletBtn_Click" >
+                        <Image Source="images/kotlet.png" Width="250" Height="250" />
                     </Button>
-                    <Button Margin="0,0,200,300" Height="150" Width="200"></Button>
-                    <Button Margin="300,0,0,300" Height="150" Width="200"></Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="10,0,0,250" Height="250" Width="250" Click="TavakabakiBtn_Click">
+                        <Image Source="images/tavakababi.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="600,0,0,250" Height="250" Width="250" Click="QuzusoganetBtn_Click">
+                        <Image Source="images/quzusoganet.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="0,280,300,0" Height="250" Width="250" Click="QuzubaldiriqovurmaBtn_Click">
+                        <Image Source="images/quzubaldirqovurma.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="270,280,0,0" Height="250" Width="250" Click="FettuciniBtn_Click">
+                        <Image Source="images/fettucini.png" Width="250" Height="250" />
+                    </Button>
+                    
                 </Grid>
             </TabItem>
             <TabItem Header="Kabablar">
                 <Grid>
-                    <!-- Sekme 2 içeriği -->
+                    <Grid>
+
+                        <Button Style="{StaticResource OrderModel}" Margin="0,0,590,250" Height="250" Width="250" Click="DanabastirmaBtn_Click">
+                            <Image Source="images/danabastirma.png" Width="250" Height="250" />
+                        </Button>
+                        <Button Style="{StaticResource OrderModel}" Margin="10,0,0,250" Height="250" Width="250" Click="XankebabiBtn_Click">
+                            <Image Source="images/xankebabi.png" Width="250" Height="250" />
+                        </Button>
+                        <Button Style="{StaticResource OrderModel}" Margin="600,0,0,250" Height="250" Width="250" Click="LulekebabBtn_Click">
+                            <Image Source="images/lulekebab.png" Width="250" Height="250" />
+                        </Button>
+                        <Button Style="{StaticResource OrderModel}" Margin="0,280,590,0" Height="250" Width="250" Click="QuzuantrikorBtn_Click">
+                            <Image Source="images/quzuantrikot.png" Width="250" Height="250" />
+                        </Button>
+                        <Button Style="{StaticResource OrderModel}" Margin="10,280,0,0" Height="250" Width="250" Click="QuzukebabiBtn_Click">
+                            <Image Source="images/quzukebab.png" Width="250" Height="250" />
+                        </Button>
+                        <Button Style="{StaticResource OrderModel}" Margin="600,280,0,0" Height="250" Width="250" Click="ToyuqlulesiBtn_Click">
+                            <Image Source="images/toyuqlulesi.png" Width="250" Height="250" />
+                        </Button>
+                        
+                    </Grid>
                 </Grid>
             </TabItem>
             <TabItem  Header="Şorbalar">
                 <Grid>
-                    <!-- Sekme 2 içeriği -->
+
+                    <Button Style="{StaticResource OrderModel}" Margin="0,0,590,250" Height="250" Width="250" Click="DusbereBtn_Click">
+                        <Image Source="images/dusbere.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="10,0,0,250" Height="250" Width="250" Click="GobeleksorbasiBtn_Click">
+                        <Image Source="images/gobeleksorbasi.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="600,0,0,250" Height="250" Width="250" Click="GurzesorbasiBtn_Click">
+                        <Image Source="images/gurzesorbasi.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="0,280,590,0" Height="250" Width="250" Click="Gobeleksorbasi2Btn_Click">
+                        <Image Source="images/gobeleksorbasi2.png" Width="250" Height="250" Stretch="Fill"  />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="10,280,0,0" Height="250" Width="250" Click="KoksorbasiBtn_Click">
+                        <Image Source="images/koksorbasi.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="600,280,0,0" Height="250" Width="250" Click="KartofsorbasiBtn_Click">
+                        <Image Source="images/kartofsorbasi.png" Width="250" Height="250" />
+                    </Button>
+                    
                 </Grid>
             </TabItem>
             <TabItem  Header="Salatlar">
                 <Grid>
-                    <!-- Sekme 2 içeriği -->
+
+                    <Button  Style="{StaticResource OrderModel}" Margin="0,0,590,250" Height="250" Width="250" Click="TunabaligisalatiBtn_Click">
+                        <Image Source="images/tunabaligisalati.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="10,0,0,250" Height="250" Width="250" Click="SezarsalatiBtn_Click">
+                        <Image Source="images/sezarsalati.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="600,0,0,250" Height="250" Width="250" Click="CikenbluzBtn_Click">
+                        <Image Source="images/cikenbluz.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="0,280,590,0" Height="250" Width="250" Click="CugundursalatiBtn_Click">
+                        <Image Source="images/cugundursalati.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="10,280,0,0" Height="250" Width="250" Click="CobansalatiBtn_Click">
+                        <Image Source="images/cobansalati.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="600,280,0,0" Height="250" Width="250" Click="YunansalatiBtn_Click">
+                        <Image Source="images/yunansalati.png" Width="250" Height="250" />
+                    </Button>
+                    
                 </Grid>
             </TabItem>
-            <TabItem  Header="FastFood">
+            <TabItem  Header="Soyuq qəlyanaltılar">
                 <Grid>
-                    <!-- Sekme 2 içeriği -->
+
+                    <Button  Style="{StaticResource OrderModel}" Margin="0,0,590,250" Height="250" Width="250" Click="TursularBtn_Click">
+                        <Image Source="images/tursular.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="10,0,0,250" Height="250" Width="250" Click="TerevezlerBtn_Click">
+                        <Image Source="images/terevezler.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="600,0,0,250" Height="250" Width="250" Click="PendirlerBtn_Click">
+                        <Image Source="images/pendirler.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="0,280,590,0" Height="250" Width="250" Click="ToyuqruletiBtn_Click">
+                        <Image Source="images/toyuqruleti.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="10,280,0,0" Height="250" Width="250" Click="HumusBtn_Click">
+                        <Image Source="images/humus.png" Width="250" Height="250" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="600,280,0,0" Height="250" Width="250" Click="BruskettaBtn_Click">
+                        <Image Source="images/brusketta.png" Width="250" Height="250" />
+                    </Button>
+                    
                 </Grid>
             </TabItem>
             <TabItem  Header="İçkilər">
                 <Grid>
-                    <!-- Sekme 2 içeriği -->
+
+                    <Button  Style="{StaticResource OrderModel}" Margin="0,0,590,250" Height="250" Width="250" Click="WatermelonslushieBtn_Click">
+                        <Image Source="images/watermelonslushie.png" Width="250" Height="250" Stretch="Fill" />
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="10,0,0,250" Height="250" Width="250" Click="LechemilkshakeBtn_Click">
+                        <Image Source="images/lechemilkshake.png" Width="250" Height="250" Stretch="Fill"/>
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="600,0,0,250" Height="250" Width="250" Click="MojitoBtn_Click">
+                        <Image Source="images/mojito.png" Width="250" Height="250" Stretch="Fill"/>
+                    </Button>
+                    <Button Style="{StaticResource btn}" Margin="0,280,590,0" Height="250" Width="250" Click="WiskyBtn_Click">
+                        <Image Source="images/wisky.png" Width="250" Height="250" Stretch="Fill"/>
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="10,280,0,0" Height="250" Width="250" Click="WhineBtn_Click">
+                        <Image Source="images/whine.png" Width="250" Height="250" Stretch="Fill"/>
+                    </Button>
+                    <Button Style="{StaticResource OrderModel}" Margin="600,280,0,0" Height="250" Width="250" Click="MartiniBtn_Click">
+                        <Image Source="images/martini.png" Width="250" Height="250" Stretch="Fill"/>
+                    </Button>
+                    
                 </Grid>
             </TabItem>
         </TabControl>

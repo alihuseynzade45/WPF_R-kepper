@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WPF_R_kiper.OrdersFile.View;
+using WPF_R_kiper.CheckFile;
+using WPF_R_kiper.CheckFile.View;
 
 namespace WPF_R_kiper.View
 {
@@ -31,6 +33,9 @@ namespace WPF_R_kiper.View
 
             Orders ordersWindow = new Orders();
             ordersWindow.Show();
+            Check checkWindow = new Check();
+            checkWindow.Show();
+
             //OrdersFile ordersWindow = new OrdersFile();
             //ordersWindow.Show();
 

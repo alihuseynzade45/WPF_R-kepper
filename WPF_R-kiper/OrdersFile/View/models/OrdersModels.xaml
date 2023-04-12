@@ -20,66 +20,34 @@
             </Setter.Value>
         </Setter>
     </Style>-->
-    
-    
-    
 
-    <Style TargetType="Button" x:Key="PriceButtonStyle">
+
+
+
+    <Style TargetType="TabItem">
+        <Setter Property="Background" Value="Gray"/>
+        <Setter Property="BorderBrush" Value="White"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="10"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Grid>
-                        <ContentPresenter 
-                        x:Name="contentPresenter"
-                        HorizontalAlignment="Center" 
-                        VerticalAlignment="Center" 
-                        Content="{TemplateBinding Content}" 
-                        Margin="{TemplateBinding Padding}"
-                        Background="{TemplateBinding Background}"/>
-                        <Rectangle x:Name="whiteRect" Fill="White" Opacity="0">
-                            <Rectangle.RenderTransform>
-                                <TranslateTransform X="0" Y="-10" />
-                            </Rectangle.RenderTransform>
-                        </Rectangle>
-                    </Grid>
+                <ControlTemplate TargetType="TabItem">
+                    <Border Name="Border"
+                                Margin="-2,-2,0,0"
+                                Padding="15"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10,10,0,0">
+                        <ContentPresenter ContentSource="Header"
+                                              RecognizesAccessKey="True"/>
+                    </Border>
                     <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="Border" Property="Background" Value="White"/>
+                        </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Trigger.EnterActions>
-                                <BeginStoryboard>
-                                    <Storyboard>
-                                        <DoubleAnimation 
-                                        Storyboard.TargetName="whiteRect" 
-                                        Storyboard.TargetProperty="Opacity" 
-                                        From="0" 
-                                        To="0.8" 
-                                        Duration="0:0:0.2"/>
-                                        <DoubleAnimation 
-                                        Storyboard.TargetName="whiteRect" 
-                                        Storyboard.TargetProperty="(Rectangle.RenderTransform).(TranslateTransform.Y)" 
-                                        From="-10" 
-                                        To="-40" 
-                                        Duration="0:0:0.2"/>
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </Trigger.EnterActions>
-                            <Trigger.ExitActions>
-                                <BeginStoryboard>
-                                    <Storyboard>
-                                        <DoubleAnimation 
-                                        Storyboard.TargetName="whiteRect" 
-                                        Storyboard.TargetProperty="Opacity" 
-                                        From="0.8" 
-                                        To="0" 
-                                        Duration="0:0:0.2"/>
-                                        <DoubleAnimation 
-                                        Storyboard.TargetName="whiteRect" 
-                                        Storyboard.TargetProperty="(Rectangle.RenderTransform).(TranslateTransform.Y)" 
-                                        From="-40" 
-                                        To="-10" 
-                                        Duration="0:0:0.2"/>
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </Trigger.ExitActions>
+                            <Setter TargetName="Border" Property="Background" Value="LightBlue"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -87,7 +55,25 @@
         </Setter>
     </Style>
 
+    <Style x:Key="OrderModel" TargetType="{x:Type Button}">
 
+        <Setter Property="Height" Value="200"></Setter>
+        <Setter Property="Width" Value="300"></Setter>
+        <Setter Property="Background" Value="Transparent"></Setter>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+
+                    <Border x:Name="buttonBorder"  CornerRadius="3" BorderThickness="3.5" BorderBrush="white" >
+
+                        <ContentPresenter  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 
