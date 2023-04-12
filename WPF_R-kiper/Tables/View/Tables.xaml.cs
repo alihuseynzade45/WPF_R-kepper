@@ -28,7 +28,7 @@ namespace WPF_R_kiper.View
             InitializeComponent();
         }
 
-        private void myButton_Click(object sender, RoutedEventArgs e)
+        private void Table1Btn_Click(object sender, RoutedEventArgs e)
         {
 
             Orders ordersWindow = new Orders();
@@ -49,5 +49,104 @@ namespace WPF_R_kiper.View
             }
         }
 
+        private void Table2Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Orders ordersWindow = new Orders();
+            ordersWindow.Show();
+            Check checkWindow = new Check();
+            checkWindow.Show();
+
+            //OrdersFile ordersWindow = new OrdersFile();
+            //ordersWindow.Show();
+
+            if (sender is Button button)
+            {
+                Border buttonBorder = (Border)button.Template.FindName("buttonBorder", button);
+                if (buttonBorder != null)
+                {
+                    buttonBorder.BorderBrush = Brushes.Red;
+                }
+            }
+        }
+
+        private void Table3Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Orders ordersWindow = new Orders();
+            ordersWindow.Show();
+            Check checkWindow = new Check();
+            checkWindow.Show();
+
+            //OrdersFile ordersWindow = new OrdersFile();
+            //ordersWindow.Show();
+
+            if (sender is Button button)
+            {
+                Border buttonBorder = (Border)button.Template.FindName("buttonBorder", button);
+                if (buttonBorder != null)
+                {
+                    buttonBorder.BorderBrush = Brushes.Red;
+                }
+            }
+        }
+
+        private void Table4Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Orders ordersWindow = new Orders();
+            ordersWindow.Show();
+            Check checkWindow = new Check();
+            checkWindow.Show();
+
+            //OrdersFile ordersWindow = new OrdersFile();
+            //ordersWindow.Show();
+
+            if (sender is Button button)
+            {
+                Border buttonBorder = (Border)button.Template.FindName("buttonBorder", button);
+                if (buttonBorder != null)
+                {
+                    buttonBorder.BorderBrush = Brushes.Red;
+                }
+            }
+        }
+
+        private void Table5Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Orders ordersWindow = new Orders();
+            ordersWindow.Show();
+            Check checkWindow = new Check();
+            checkWindow.Show();
+
+            //OrdersFile ordersWindow = new OrdersFile();
+            //ordersWindow.Show();
+
+            if (sender is Button button)
+            {
+                Border buttonBorder = (Border)button.Template.FindName("buttonBorder", button);
+                if (buttonBorder != null)
+                {
+                    buttonBorder.BorderBrush = Brushes.Red;
+                }
+            }
+        }
+
+        private void Table6Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Orders ordersWindow = new Orders();
+            ordersWindow.Show();
+            Check checkWindow = new Check();
+            checkWindow.Show();
+
+            //OrdersFile ordersWindow = new OrdersFile();
+            //ordersWindow.Show();
+
+            if (sender is Button button)
+            {
+                Border buttonBorder = (Border)button.Template.FindName("buttonBorder", button);
+                if (buttonBorder != null)
+                {
+                    buttonBorder.BorderBrush = Brushes.Red;
+                }
+            }
+        }
     }
 }

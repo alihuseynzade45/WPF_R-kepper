@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="Check" Height="650" Width="400" Background="{StaticResource bck1}">
     <Grid Height="600" Width="400">
-        <Image Source="images/bill.png" Margin="0,0,0,180" Height="400" Width="400" Stretch="UniformToFill" ></Image>
+        <Image Source="images/bill.png" Margin="0,0,0,180" Height="400" Width="400" Stretch="Fill" ></Image>
 
         <ListBox x:Name="lbCheck" Margin="0,0,0,250" Height="300" Width="260" BorderThickness="0" Background="Transparent"></ListBox>
 
         <ListBox x:Name="lbTotal" Margin="0,120,0,0" Height="40" Width="260" BorderThickness="0" ></ListBox>
 
-        <Button x:Name="topla" Content="cem" Height="50" Width="100" Margin="150,320,0,0" Click="Button_Click" ></Button>
+        <Button x:Name="topla" Content="Cəm" Height="50" Width="100" Margin="150,320,0,0" Click="TotalBtn_Click" ></Button>
 
        
     </Grid>

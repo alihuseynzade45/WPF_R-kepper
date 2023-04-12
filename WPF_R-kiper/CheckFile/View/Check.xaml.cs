@@ -28,7 +28,7 @@ namespace WPF_R_kiper.CheckFile.View
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void TotalBtn_Click(object sender, RoutedEventArgs e)
         {
             //ListBoxItem newItem = new ListBoxItem();
 
@@ -79,7 +79,6 @@ namespace WPF_R_kiper.CheckFile.View
 
 
         }
-
 
     }
 }

@@ -14,31 +14,31 @@
         <Border Style="{StaticResource brd1}" Background="{StaticResource bck1}"  CornerRadius="20" Height="600" Width="1200"  >
             <Grid>
             
-                <Button  x:Name="myButton" Margin="0,0,800,300" Style="{StaticResource btn}" Click="myButton_Click">
+                <Button  x:Name="myButton" Margin="0,0,800,300" Style="{StaticResource btn}" Click="Table1Btn_Click">
                     <Image x:Name="myImage" Source="images/table.png" Width="200" Height="200"/>
                 </Button>
 
-                <Button Margin="0,0,0,300" Style="{StaticResource btn}">
+                <Button Margin="0,0,0,300" Style="{StaticResource btn}" Click="Table2Btn_Click">
                      <Image Source="images/table.png" Width="200" Height="200" />
                 </Button>
-                    
-                <Button Margin="800,0,0,300" Style="{StaticResource btn}">
+
+                <Button Margin="800,0,0,300" Style="{StaticResource btn}" Click="Table3Btn_Click">
                     <Image Source="images/table.png" Width="200" Height="200" />
                 </Button>
-                        
-              
 
-              
-                    
-                <Button   Margin="0,300,800,0" Style="{StaticResource btn}" Click="myButton_Click">
+
+
+
+
+                <Button   Margin="0,300,800,0" Style="{StaticResource btn}" Click="Table4Btn_Click">
                     <Image  Source="images/table.png" Width="200" Height="200"/>
                 </Button>
 
-                <Button Margin="0,300,0,0" Style="{StaticResource btn}">
+                <Button Margin="0,300,0,0" Style="{StaticResource btn}" Click="Table5Btn_Click">
                     <Image Source="images/table.png" Width="200" Height="200" />
                 </Button>
 
-                <Button Margin="800,300,0,0" Style="{StaticResource btn}">
+                <Button Margin="800,300,0,0" Style="{StaticResource btn}" Click="Table6Btn_Click">
                     <Image Source="images/table.png" Width="200" Height="200" />
                 </Button>
 
