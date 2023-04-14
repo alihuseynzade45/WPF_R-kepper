@@ -46,7 +46,15 @@
     <None Remove="OrdersFile\View\images\wisky.png" />
     <None Remove="OrdersFile\View\images\xankebabi.png" />
     <None Remove="OrdersFile\View\images\yunansalati.png" />
-    <None Remove="Tables\View\images\table.png" />
+    <None Remove="PinFile\View\images\5g.png" />
+    <None Remove="PinFile\View\images\battery-full.png" />
+    <None Remove="PinFile\View\images\cashier.png" />
+    <None Remove="PinFile\View\images\delete.png" />
+    <None Remove="PinFile\View\images\enter.png" />
+    <None Remove="PinFile\View\images\rkeeper.png" />
+    <None Remove="PinFile\View\images\tab.png" />
+    <None Remove="PinFile\View\images\wifi.png" />
+    <None Remove="TableFile\View\images\table123.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -87,13 +95,15 @@
     <Resource Include="OrdersFile\View\images\wisky.png" />
     <Resource Include="OrdersFile\View\images\xankebabi.png" />
     <Resource Include="OrdersFile\View\images\yunansalati.png" />
-    <Resource Include="Tables\View\images\table.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Tables\View\Tables.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Resource Include="PinFile\View\images\5g.png" />
+    <Resource Include="PinFile\View\images\battery-full.png" />
+    <Resource Include="PinFile\View\images\cashier.png" />
+    <Resource Include="PinFile\View\images\delete.png" />
+    <Resource Include="PinFile\View\images\enter.png" />
+    <Resource Include="PinFile\View\images\rkeeper.png" />
+    <Resource Include="PinFile\View\images\tab.png" />
+    <Resource Include="PinFile\View\images\wifi.png" />
+    <Resource Include="TableFile\View\images\table123.png" />
   </ItemGroup>
 
 </Project>

@@ -10,31 +10,30 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WPF_R_kiper.OrdersFile.View;
-using WPF_R_kiper.CheckFile;
 using WPF_R_kiper.CheckFile.View;
+using WPF_R_kiper.OrdersFile.View;
+using WPF_R_kiper.TableFile.View;
 
-namespace WPF_R_kiper.View
+namespace WPF_R_kiper.TableFile.View
 {
     /// <summary>
-    /// Interaction logic for Login.xaml
+    /// Interaction logic for Table.xaml
     /// </summary>
-    public partial class Login : Window
+    public partial class Table : Window
     {
-        public Login()
+        public Table()
         {
             InitializeComponent();
         }
 
         private void Table1Btn_Click(object sender, RoutedEventArgs e)
         {
-
             Orders ordersWindow = new Orders();
             ordersWindow.Show();
             Check checkWindow = new Check();
             checkWindow.Show();
+       
 
             //OrdersFile ordersWindow = new OrdersFile();
             //ordersWindow.Show();
@@ -150,3 +149,4 @@ namespace WPF_R_kiper.View
         }
     }
 }
+

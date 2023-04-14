@@ -2,15 +2,17 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:WPF_R_kiper"
-             StartupUri="Tables/View/Tables.xaml">
+             StartupUri="PinFile/View/Pin.xaml">
 
     <Application.Resources>
         
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Tables/View/models/TaplesModels.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="TableFile/View/models/TableModels.xaml" ></ResourceDictionary>
                 <ResourceDictionary Source="OrdersFile/View/models/OrdersModels.xaml" ></ResourceDictionary>
                 <ResourceDictionary Source="CheckFile/View/models/CheckModels.xaml" ></ResourceDictionary>
+                <ResourceDictionary Source="PinFile/View/models/PinModels.xaml" ></ResourceDictionary>
+                
             </ResourceDictionary.MergedDictionaries>
 
             <Style x:Key="btn" TargetType="{x:Type Button}">
