@@ -5,7 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_R_kiper.CheckFile.View"
         mc:Ignorable="d"
-        Title="Check" Height="650" Width="400" Background="{StaticResource bck1}">
+        Title="Check" Height="650" Width="400" Background="{StaticResource bck1}"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        AllowsTransparency="False" WindowStyle="ThreeDBorderWindow">
+    
+    
     <Grid Height="600" Width="400">
         <Image Source="images/bill.png" Margin="0,0,0,180" Height="400" Width="400" Stretch="Fill" ></Image>
 
@@ -15,6 +19,5 @@
 
         <Button x:Name="topla" Content="Cəm" Height="50" Width="100" Margin="150,320,0,0" Click="TotalBtn_Click" ></Button>
 
-       
     </Grid>
 </Window>

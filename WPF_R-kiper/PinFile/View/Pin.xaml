@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_R_kiper.PinFile.View"
         mc:Ignorable="d"
-        Title="R-Keeper" Height="580" Width="650" Icon="images/cashier.png">
+        Title="R-Keeper" Height="580" Width="650" Icon="images/cashier.png" Closing="Window_Closing">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="images/tab.png"/>

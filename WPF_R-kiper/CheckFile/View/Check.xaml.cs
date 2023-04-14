@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using Microsoft.Win32;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using Paragraph = iTextSharp.text.Paragraph;
+using WPF_R_kiper.TableFile.View;
+using System.Linq;
+using WPF_R_kiper.OrdersFile;
+using WPF_R_kiper.OrdersFile.View;
 
 namespace WPF_R_kiper.CheckFile.View
 {
@@ -20,46 +18,19 @@ namespace WPF_R_kiper.CheckFile.View
     /// </summary>
     public partial class Check : Window
     {
-
-
+        private Orders window1;
+        
         public Check()
         {
             InitializeComponent();
+            window1 = new Orders();
 
         }
 
+
+
         private void TotalBtn_Click(object sender, RoutedEventArgs e)
         {
-            //ListBoxItem newItem = new ListBoxItem();
-
-            //// Öğe metnini ayarla
-            //newItem.Content = "Corba | 25TL";
-
-            //// ListBox'a öğe ekle
-            //lbCheck.Items.Add(newItem);
-
-            //===============================================================
-
-
-            //// Tüm düğmelerin içeriğini topla
-            //int sum = int.Parse(sorba.Content.ToString()) +
-            //          int.Parse(kebab.Content.ToString());
-
-
-            //// Öğe metnini ayarla
-            //string itemText = $"{sum}";
-
-            //// ListBox'a öğe ekle
-            //lbCheck.Items.Add(itemText);
-            //===============================================================
-
-            //int total = 0;
-            //foreach (string item in lbCheck.Items)
-            //{
-            //    int price = int.Parse(item.Split('|')[1].Trim().Replace("AZN", ""));
-            //    total += price;
-            //}
-            //lbTotal.Items.Add($"Toplam: {total} AZN");
 
             int total = 0;
             foreach (object item in lbCheck.Items)
@@ -78,7 +49,64 @@ namespace WPF_R_kiper.CheckFile.View
             lbTotal.Items.Add($"Toplam: {total} AZN");
 
 
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+            saveFileDialog.FileName = "Save Check.pdf";
+            saveFileDialog.Title = "Save PDF File";
+
+            // Show the SaveFileDialog
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                // Call the SaveListBoxAsPdf method with the selected file path
+                SaveListBoxAsPdf(saveFileDialog.FileName);
+            }
+
+
         }
 
+
+        private void SaveListBoxAsPdf(string filePath)
+        {
+            // Create a new instance of the Document class
+            Document document = new Document();
+
+            try
+            {
+                // Create a new PdfWriter instance with the specified file path
+                PdfWriter.GetInstance(document, new FileStream(filePath, FileMode.Create));
+
+                // Open the document
+                document.Open();
+
+                // Create a new Paragraph instance
+                Paragraph paragraph = new Paragraph();
+
+                // Add each ListBoxItem to the Paragraph
+                foreach (ListBoxItem item in lbCheck.Items)
+                {
+                    paragraph.Add(new Chunk(item.Content.ToString()));
+                    paragraph.Add(new Chunk("\n"));
+
+                }
+
+                // Add the Paragraph to the document
+                document.Add(paragraph);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                // Close the document
+                document.Close();
+            }
+
+
+        }
+
+
+        
     }
 }

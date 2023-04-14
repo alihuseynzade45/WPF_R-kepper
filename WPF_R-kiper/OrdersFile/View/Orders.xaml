@@ -5,10 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_R_kiper.OrdersFile.View"
         mc:Ignorable="d"
-        Title="Orders" Height="650" Width="900" Background="{StaticResource bck1}">
-
+        Title="Orders" Height="650" Width="900" Background="{StaticResource bck1}"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        AllowsTransparency="False"  >
 
     <Grid>
+
+       
+         
+    
         <TabControl Background="{StaticResource bck1}">
             <TabItem  Header="İsti yeməklər">
                 <Grid>
@@ -141,7 +146,7 @@
                     <Button Style="{StaticResource OrderModel}" Margin="600,0,0,250" Height="250" Width="250" Click="MojitoBtn_Click">
                         <Image Source="images/mojito.png" Width="250" Height="250" Stretch="Fill"/>
                     </Button>
-                    <Button Style="{StaticResource btn}" Margin="0,280,590,0" Height="250" Width="250" Click="WiskyBtn_Click">
+                    <Button Style="{StaticResource OrderModel}" Margin="0,280,590,0" Height="250" Width="250" Click="WiskyBtn_Click">
                         <Image Source="images/wisky.png" Width="250" Height="250" Stretch="Fill"/>
                     </Button>
                     <Button Style="{StaticResource OrderModel}" Margin="10,280,0,0" Height="250" Width="250" Click="WhineBtn_Click">

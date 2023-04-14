@@ -22,6 +22,7 @@ namespace WPF_R_kiper.TableFile.View
     /// </summary>
     public partial class Table : Window
     {
+       
         public Table()
         {
             InitializeComponent();
@@ -33,10 +34,11 @@ namespace WPF_R_kiper.TableFile.View
             ordersWindow.Show();
             Check checkWindow = new Check();
             checkWindow.Show();
-       
+            ordersWindow.Left = 200;
+            ordersWindow.Top = 170;
+            checkWindow.Left = 1080;
+            checkWindow.Top = 170;
 
-            //OrdersFile ordersWindow = new OrdersFile();
-            //ordersWindow.Show();
 
             if (sender is Button button)
             {
@@ -46,6 +48,9 @@ namespace WPF_R_kiper.TableFile.View
                     buttonBorder.BorderBrush = Brushes.Red;
                 }
             }
+
+            WindowState = WindowState.Minimized;
+           
         }
 
         private void Table2Btn_Click(object sender, RoutedEventArgs e)
@@ -54,9 +59,12 @@ namespace WPF_R_kiper.TableFile.View
             ordersWindow.Show();
             Check checkWindow = new Check();
             checkWindow.Show();
+            ordersWindow.Left = 200;
+            ordersWindow.Top = 170;
+            checkWindow.Left = 1080;
+            checkWindow.Top = 170;
 
-            //OrdersFile ordersWindow = new OrdersFile();
-            //ordersWindow.Show();
+
 
             if (sender is Button button)
             {
@@ -66,6 +74,7 @@ namespace WPF_R_kiper.TableFile.View
                     buttonBorder.BorderBrush = Brushes.Red;
                 }
             }
+            WindowState = WindowState.Minimized;
         }
 
         private void Table3Btn_Click(object sender, RoutedEventArgs e)
@@ -74,9 +83,11 @@ namespace WPF_R_kiper.TableFile.View
             ordersWindow.Show();
             Check checkWindow = new Check();
             checkWindow.Show();
+            ordersWindow.Left = 200;
+            ordersWindow.Top = 170;
+            checkWindow.Left = 1080;
+            checkWindow.Top = 170;
 
-            //OrdersFile ordersWindow = new OrdersFile();
-            //ordersWindow.Show();
 
             if (sender is Button button)
             {
@@ -86,6 +97,7 @@ namespace WPF_R_kiper.TableFile.View
                     buttonBorder.BorderBrush = Brushes.Red;
                 }
             }
+            WindowState = WindowState.Minimized;
         }
 
         private void Table4Btn_Click(object sender, RoutedEventArgs e)
@@ -94,9 +106,11 @@ namespace WPF_R_kiper.TableFile.View
             ordersWindow.Show();
             Check checkWindow = new Check();
             checkWindow.Show();
+            ordersWindow.Left = 200;
+            ordersWindow.Top = 170;
+            checkWindow.Left = 1080;
+            checkWindow.Top = 170;
 
-            //OrdersFile ordersWindow = new OrdersFile();
-            //ordersWindow.Show();
 
             if (sender is Button button)
             {
@@ -106,6 +120,7 @@ namespace WPF_R_kiper.TableFile.View
                     buttonBorder.BorderBrush = Brushes.Red;
                 }
             }
+            WindowState = WindowState.Minimized;
         }
 
         private void Table5Btn_Click(object sender, RoutedEventArgs e)
@@ -114,9 +129,11 @@ namespace WPF_R_kiper.TableFile.View
             ordersWindow.Show();
             Check checkWindow = new Check();
             checkWindow.Show();
+            ordersWindow.Left = 200;
+            ordersWindow.Top = 170;
+            checkWindow.Left = 1080;
+            checkWindow.Top = 170;
 
-            //OrdersFile ordersWindow = new OrdersFile();
-            //ordersWindow.Show();
 
             if (sender is Button button)
             {
@@ -126,6 +143,7 @@ namespace WPF_R_kiper.TableFile.View
                     buttonBorder.BorderBrush = Brushes.Red;
                 }
             }
+            WindowState = WindowState.Minimized;
         }
 
         private void Table6Btn_Click(object sender, RoutedEventArgs e)
@@ -134,9 +152,10 @@ namespace WPF_R_kiper.TableFile.View
             ordersWindow.Show();
             Check checkWindow = new Check();
             checkWindow.Show();
-
-            //OrdersFile ordersWindow = new OrdersFile();
-            //ordersWindow.Show();
+            ordersWindow.Left = 200;
+            ordersWindow.Top = 170;
+            checkWindow.Left = 1080;
+            checkWindow.Top = 170;
 
             if (sender is Button button)
             {
@@ -146,6 +165,12 @@ namespace WPF_R_kiper.TableFile.View
                     buttonBorder.BorderBrush = Brushes.Red;
                 }
             }
+            WindowState = WindowState.Minimized;
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = false;
         }
     }
 }

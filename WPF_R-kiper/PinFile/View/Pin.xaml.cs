@@ -148,13 +148,21 @@ namespace WPF_R_kiper.PinFile.View
             {
                 Table tableWindows = new Table();
                 tableWindows.Show();
+                tableWindows.Left = 200;
+                tableWindows.Top = 170;
             }
             else
             {
                 MessageBox.Show("PIN Yanlışdır");
             }
 
+            this.Close();
 
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = false; 
         }
     }
 }

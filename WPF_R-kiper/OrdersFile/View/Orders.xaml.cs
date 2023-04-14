@@ -29,8 +29,6 @@ namespace WPF_R_kiper.OrdersFile.View
             InitializeComponent();
         }
 
-
-
         private void KotletBtn_Click(object sender, RoutedEventArgs e)
         {
             Check thirdWindow = Application.Current.Windows.OfType<Check>().FirstOrDefault();

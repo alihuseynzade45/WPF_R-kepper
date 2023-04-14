@@ -5,36 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_R_kiper.TableFile.View"
         mc:Ignorable="d"
-        Title="Table" Height="700" Width="1300" Background="#161627">
+        Title="Table" Height="700" Width="1300" Background="#161627"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        AllowsTransparency="False" WindowStyle="ThreeDBorderWindow" Closing="Window_Closing">
+
     <Grid>
         <Border Style="{StaticResource brd1}" Background="{StaticResource bck1}"  CornerRadius="20" Height="600" Width="1200">
             <Grid>
 
-                <Button  x:Name="myButton" Margin="0,0,800,300" Style="{StaticResource btn}" Click="Table1Btn_Click">
+                <Button  x:Name="table1" Margin="0,0,800,300" Style="{StaticResource btn}" Click="Table1Btn_Click">
                     <Image Source="images/table123.png"></Image>
                 </Button>
 
-                <Button Margin="0,0,0,300" Style="{StaticResource btn}" Click="Table2Btn_Click">
+                <Button x:Name="table2" Margin="0,0,0,300" Style="{StaticResource btn}" Click="Table2Btn_Click">
                     <Image Source="images/table123.png" Width="200" Height="200" />
                 </Button>
 
-                <Button Margin="800,0,0,300" Style="{StaticResource btn}" Click="Table3Btn_Click">
+                <Button x:Name="table3" Margin="800,0,0,300" Style="{StaticResource btn}" Click="Table3Btn_Click">
                     <Image Source="images/table123.png" Width="200" Height="200" />
                 </Button>
-                
-                
-                
-                
-                
-                <Button   Margin="0,300,800,0" Style="{StaticResource btn}" Click="Table4Btn_Click">
+
+
+
+
+
+                <Button x:Name="table4" Margin="0,300,800,0" Style="{StaticResource btn}" Click="Table4Btn_Click">
                     <Image  Source="images/table123.png" Width="200" Height="200"/>
                 </Button>
 
-                <Button Margin="0,300,0,0" Style="{StaticResource btn}" Click="Table5Btn_Click">
+                <Button x:Name="table5" Margin="0,300,0,0" Style="{StaticResource btn}" Click="Table5Btn_Click">
                     <Image Source="images/table123.png" Width="200" Height="200" />
                 </Button>
 
-                <Button Margin="800,300,0,0" Style="{StaticResource btn}" Click="Table6Btn_Click">
+                <Button x:Name="table6" Margin="800,300,0,0" Style="{StaticResource btn}" Click="Table6Btn_Click">
                     <Image Source="images/table123.png" Width="200" Height="200" />
                 </Button>
             </Grid>
