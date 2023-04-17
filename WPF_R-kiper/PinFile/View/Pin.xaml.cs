@@ -164,5 +164,10 @@ namespace WPF_R_kiper.PinFile.View
         {
             e.Cancel = false; 
         }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

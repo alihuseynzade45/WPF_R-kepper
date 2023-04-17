@@ -15,6 +15,8 @@ using WPF_R_kiper.CheckFile.View;
 using WPF_R_kiper.OrdersFile.View;
 using WPF_R_kiper.TableFile.View;
 
+
+
 namespace WPF_R_kiper.TableFile.View
 {
     /// <summary>
@@ -26,8 +28,9 @@ namespace WPF_R_kiper.TableFile.View
         public Table()
         {
             InitializeComponent();
+            
         }
-
+       
         private void Table1Btn_Click(object sender, RoutedEventArgs e)
         {
             Orders ordersWindow = new Orders();
@@ -36,7 +39,7 @@ namespace WPF_R_kiper.TableFile.View
             checkWindow.Show();
             ordersWindow.Left = 200;
             ordersWindow.Top = 170;
-            checkWindow.Left = 1080;
+            checkWindow.Left = 1097;
             checkWindow.Top = 170;
 
 
@@ -48,6 +51,20 @@ namespace WPF_R_kiper.TableFile.View
                     buttonBorder.BorderBrush = Brushes.Red;
                 }
             }
+
+
+
+            Check thirdWindow = Application.Current.Windows.OfType<Check>().FirstOrDefault();
+            if (thirdWindow == null)
+            {
+                thirdWindow = new Check();
+                thirdWindow.Show();
+            }
+
+            ListBoxItem item = new ListBoxItem();
+            item.Content = "\t        Masa 1";
+            thirdWindow.lbTable.Items.Add(item);
+
 
             WindowState = WindowState.Minimized;
            
@@ -61,7 +78,7 @@ namespace WPF_R_kiper.TableFile.View
             checkWindow.Show();
             ordersWindow.Left = 200;
             ordersWindow.Top = 170;
-            checkWindow.Left = 1080;
+            checkWindow.Left = 1097;
             checkWindow.Top = 170;
 
 
@@ -74,6 +91,18 @@ namespace WPF_R_kiper.TableFile.View
                     buttonBorder.BorderBrush = Brushes.Red;
                 }
             }
+
+
+            Check thirdWindow = Application.Current.Windows.OfType<Check>().FirstOrDefault();
+            if (thirdWindow == null)
+            {
+                thirdWindow = new Check();
+                thirdWindow.Show();
+            }
+
+            ListBoxItem item = new ListBoxItem();
+            item.Content = "\t        Masa 2";
+            thirdWindow.lbTable.Items.Add(item);
             WindowState = WindowState.Minimized;
         }
 
@@ -85,7 +114,7 @@ namespace WPF_R_kiper.TableFile.View
             checkWindow.Show();
             ordersWindow.Left = 200;
             ordersWindow.Top = 170;
-            checkWindow.Left = 1080;
+            checkWindow.Left = 1097;
             checkWindow.Top = 170;
 
 
@@ -97,6 +126,18 @@ namespace WPF_R_kiper.TableFile.View
                     buttonBorder.BorderBrush = Brushes.Red;
                 }
             }
+
+
+            Check thirdWindow = Application.Current.Windows.OfType<Check>().FirstOrDefault();
+            if (thirdWindow == null)
+            {
+                thirdWindow = new Check();
+                thirdWindow.Show();
+            }
+
+            ListBoxItem item = new ListBoxItem();
+            item.Content = "\t        Masa 3";
+            thirdWindow.lbTable.Items.Add(item);
             WindowState = WindowState.Minimized;
         }
 
@@ -108,7 +149,7 @@ namespace WPF_R_kiper.TableFile.View
             checkWindow.Show();
             ordersWindow.Left = 200;
             ordersWindow.Top = 170;
-            checkWindow.Left = 1080;
+            checkWindow.Left = 1097;
             checkWindow.Top = 170;
 
 
@@ -120,6 +161,19 @@ namespace WPF_R_kiper.TableFile.View
                     buttonBorder.BorderBrush = Brushes.Red;
                 }
             }
+
+
+
+            Check thirdWindow = Application.Current.Windows.OfType<Check>().FirstOrDefault();
+            if (thirdWindow == null)
+            {
+                thirdWindow = new Check();
+                thirdWindow.Show();
+            }
+
+            ListBoxItem item = new ListBoxItem();
+            item.Content = "\t        Masa 4";
+            thirdWindow.lbTable.Items.Add(item);
             WindowState = WindowState.Minimized;
         }
 
@@ -131,7 +185,7 @@ namespace WPF_R_kiper.TableFile.View
             checkWindow.Show();
             ordersWindow.Left = 200;
             ordersWindow.Top = 170;
-            checkWindow.Left = 1080;
+            checkWindow.Left = 1097;
             checkWindow.Top = 170;
 
 
@@ -143,6 +197,18 @@ namespace WPF_R_kiper.TableFile.View
                     buttonBorder.BorderBrush = Brushes.Red;
                 }
             }
+
+
+            Check thirdWindow = Application.Current.Windows.OfType<Check>().FirstOrDefault();
+            if (thirdWindow == null)
+            {
+                thirdWindow = new Check();
+                thirdWindow.Show();
+            }
+
+            ListBoxItem item = new ListBoxItem();
+            item.Content = "\t        Masa 5";
+            thirdWindow.lbTable.Items.Add(item);
             WindowState = WindowState.Minimized;
         }
 
@@ -154,7 +220,7 @@ namespace WPF_R_kiper.TableFile.View
             checkWindow.Show();
             ordersWindow.Left = 200;
             ordersWindow.Top = 170;
-            checkWindow.Left = 1080;
+            checkWindow.Left = 1097;
             checkWindow.Top = 170;
 
             if (sender is Button button)
@@ -165,6 +231,18 @@ namespace WPF_R_kiper.TableFile.View
                     buttonBorder.BorderBrush = Brushes.Red;
                 }
             }
+
+
+            Check thirdWindow = Application.Current.Windows.OfType<Check>().FirstOrDefault();
+            if (thirdWindow == null)
+            {
+                thirdWindow = new Check();
+                thirdWindow.Show();
+            }
+
+            ListBoxItem item = new ListBoxItem();
+            item.Content = "\t        Masa 6";
+            thirdWindow.lbTable.Items.Add(item);
             WindowState = WindowState.Minimized;
         }
 

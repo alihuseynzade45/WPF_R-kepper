@@ -1,28 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!--<Style x:Key="btnMenu" TargetType="{x:Type Button}">
-
-        <Setter Property="Height" Value="200"></Setter>
-        <Setter Property="Width" Value="300"></Setter>
-        <Setter Property="Background" Value="Transparent"></Setter>
-
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-
-                    <Border x:Name="buttonBorder" >
-
-                        <ContentPresenter  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>-->
-
-
-
 
     <Style TargetType="TabItem">
         <Setter Property="Background" Value="Gray"/>
@@ -69,6 +47,56 @@
 
                         <ContentPresenter  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+
+    <Style x:Key="OrdersWindowStyle" TargetType="{x:Type Window}">
+        <Setter Property="WindowChrome.WindowChrome">
+            <Setter.Value>
+                <WindowChrome CaptionHeight="30"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Window}">
+                    <Border BorderThickness="1" BorderBrush="#161627" Background="{TemplateBinding Background}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0" Background="#161627" Height="30" VerticalAlignment="Top"/>
+                            <ContentPresenter Grid.Row="1"/>
+                            <StackPanel Orientation="Vertical"
+                                            Margin="5,0,0,0">
+                                <Label Content="Menyu"
+                                           FontWeight="Bold"
+                                           Foreground="White"
+                                           FontSize="25"
+                                           VerticalAlignment="Center" />
+                            </StackPanel>
+                            <Button Name="CloseButton"
+                                    Grid.Row="0"
+                                    HorizontalAlignment="Right"
+                                    BorderThickness="0"
+                                    Background="Red"
+                                    Foreground="White"
+                                    VerticalAlignment="Top"
+                                    Margin="0,0,0,0"
+                                    Width="30"
+                                    Height="30"
+                                    FontSize="20"
+                                    Content="❌"
+                                    Command="{Binding CloseCommand}" />
+                        </Grid>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

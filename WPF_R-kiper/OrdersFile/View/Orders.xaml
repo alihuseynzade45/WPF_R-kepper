@@ -7,13 +7,10 @@
         mc:Ignorable="d"
         Title="Orders" Height="650" Width="900" Background="{StaticResource bck1}"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
-        AllowsTransparency="False"  >
+        AllowsTransparency="False" Style="{StaticResource OrdersWindowStyle}" >
 
     <Grid>
 
-       
-         
-    
         <TabControl Background="{StaticResource bck1}">
             <TabItem  Header="İsti yeməklər">
                 <Grid>

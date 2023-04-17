@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Remove="CheckFile\View\images\bill.png" />
+    <None Remove="CheckFile\View\images\bin.png" />
     <None Remove="CheckFile\View\images\Restaurant_bill.png" />
     <None Remove="OrdersFile\View\images\brusketta.png" />
     <None Remove="OrdersFile\View\images\cikenbluz.png" />
@@ -59,10 +60,14 @@
 
   <ItemGroup>
     <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+    <PackageReference Include="WindowsAPICodePack-Core" Version="1.1.2" />
+    <PackageReference Include="WindowsAPICodePack-Shell" Version="1.1.1" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="CheckFile\View\images\bill.png" />
+    <Resource Include="CheckFile\View\images\bin.png" />
     <Resource Include="CheckFile\View\images\Restaurant_bill.png" />
     <Resource Include="OrdersFile\View\images\brusketta.png" />
     <Resource Include="OrdersFile\View\images\cikenbluz.png" />

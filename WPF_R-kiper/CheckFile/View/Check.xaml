@@ -7,17 +7,36 @@
         mc:Ignorable="d"
         Title="Check" Height="650" Width="400" Background="{StaticResource bck1}"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
-        AllowsTransparency="False" WindowStyle="ThreeDBorderWindow">
+        AllowsTransparency="False" Style="{StaticResource CheckWindowStyle}">
     
     
-    <Grid Height="600" Width="400">
-        <Image Source="images/bill.png" Margin="0,0,0,180" Height="400" Width="400" Stretch="Fill" ></Image>
+    <Grid Height="600" Margin="-58,17,0,17">
+        <Image Source="images/bill.png" Margin="10,0,0,130" Height="450" Width="500" Stretch="Fill" ></Image>
 
-        <ListBox x:Name="lbCheck" Margin="0,0,0,250" Height="300" Width="260" BorderThickness="0" Background="Transparent"></ListBox>
+        <ListBox x:Name="lbTable" Margin="60,0,0,520" Height="30" Width="300" FontSize="20" BorderThickness="0" Background="Transparent"></ListBox>
 
-        <ListBox x:Name="lbTotal" Margin="0,120,0,0" Height="40" Width="260" BorderThickness="0" ></ListBox>
+        <ListBox x:Name="lbCheck" Margin="60,0,0,151" Height="330" Width="330" FontSize="13" BorderThickness="0" Background="Transparent">
 
-        <Button x:Name="topla" Content="Cəm" Height="50" Width="100" Margin="150,320,0,0" Click="TotalBtn_Click" ></Button>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
 
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Sil" Click="MenuItem_Click">
+                        <MenuItem.Icon>
+                            <Image Source="images/bin.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </ContextMenu>
+            </ListBox.ContextMenu>
+        </ListBox>
+
+        <ListBox x:Name="lbTotal" Margin="60,230,0,0" Height="40" Width="300" BorderThickness="0" ></ListBox>
+
+        <Button x:Name="btnTotal" Content="$ Cəm $" Height="70" Width="120" Margin="60,430,0,0" FontSize="30" Background="#85BB50" Click="TotalBtn_Click" ></Button>
+        
     </Grid>
 </Window>

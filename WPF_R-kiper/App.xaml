@@ -7,33 +7,17 @@
     <Application.Resources>
         
         <ResourceDictionary>
+            
             <ResourceDictionary.MergedDictionaries>
+                
                 <ResourceDictionary Source="TableFile/View/models/TableModels.xaml" ></ResourceDictionary>
                 <ResourceDictionary Source="OrdersFile/View/models/OrdersModels.xaml" ></ResourceDictionary>
                 <ResourceDictionary Source="CheckFile/View/models/CheckModels.xaml" ></ResourceDictionary>
                 <ResourceDictionary Source="PinFile/View/models/PinModels.xaml" ></ResourceDictionary>
-                
+
             </ResourceDictionary.MergedDictionaries>
-
-            <Style x:Key="btn" TargetType="{x:Type Button}">
-                
-                <Setter Property="Height" Value="200"></Setter>
-                <Setter Property="Width" Value="300"></Setter>
-                <Setter Property="Background" Value="Transparent"></Setter>
-
-                <Setter Property="Template">
-                    <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type Button}">
-
-                            <Border x:Name="buttonBorder"  CornerRadius="3" BorderThickness="2" BorderBrush="#00FF00" >
-                                
-                                <ContentPresenter  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Setter.Value>
-                </Setter>
-            </Style>
+            
+            
         </ResourceDictionary>
 
     </Application.Resources>

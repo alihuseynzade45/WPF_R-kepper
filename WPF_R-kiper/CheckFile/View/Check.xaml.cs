@@ -19,7 +19,7 @@ namespace WPF_R_kiper.CheckFile.View
     public partial class Check : Window
     {
         private Orders window1;
-        
+
         public Check()
         {
             InitializeComponent();
@@ -62,7 +62,7 @@ namespace WPF_R_kiper.CheckFile.View
                 SaveListBoxAsPdf(saveFileDialog.FileName);
             }
 
-
+            Application.Current.Shutdown();
         }
 
 
@@ -106,7 +106,19 @@ namespace WPF_R_kiper.CheckFile.View
 
         }
 
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            MenuItem clickedItem = sender as MenuItem;
+            string header = clickedItem.Header.ToString();
 
-        
+            switch (header)
+            {
+                case "Sil":
+                    lbCheck.Items.Remove(lbCheck.SelectedItem);
+                    break;
+
+            }
+
+        }
     }
 }

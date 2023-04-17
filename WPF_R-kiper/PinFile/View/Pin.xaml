@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_R_kiper.PinFile.View"
         mc:Ignorable="d"
-        Title="R-Keeper" Height="580" Width="650" Icon="images/cashier.png" Closing="Window_Closing">
+        Title="R-Keeper" Height="580" Width="650" 
+        Icon="images/cashier.png" ResizeMode="NoResize" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
+    
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="images/tab.png"/>
@@ -31,7 +33,7 @@
             <Image Source="images/delete.png" ></Image>
         </Button>
 
-
+        
 
 
         <Button x:Name="button1" Content="1" Style="{StaticResource PinBtnModle}" Width="70" Height="70"  Margin="10,10,210,130" Click="Button_Click_1"></Button>
