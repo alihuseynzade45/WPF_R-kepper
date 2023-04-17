@@ -34,9 +34,9 @@
             </ListBox.ContextMenu>
         </ListBox>
 
-        <ListBox x:Name="lbTotal" Margin="60,230,0,0" Height="40" Width="300" BorderThickness="0" ></ListBox>
+        <ListBox x:Name="lbTotal" Margin="60,230,0,0" Height="40" Width="300" BorderThickness="0" FontSize="22" ></ListBox>
 
-        <Button x:Name="btnTotal" Content="$ Cəm $" Height="70" Width="120" Margin="60,430,0,0" FontSize="30" Background="#85BB50" Click="TotalBtn_Click" ></Button>
-        
+        <Button x:Name="btnTotal" Content="$ Cəm $" Height="80" Width="140" Margin="70,440,0,0" FontSize="35" Background="#85BB50" Click="TotalBtn_Click" ></Button>
+
     </Grid>
 </Window>

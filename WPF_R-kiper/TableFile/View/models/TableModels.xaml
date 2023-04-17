@@ -10,9 +10,9 @@
     </LinearGradientBrush>
 
     <LinearGradientBrush x:Key="bck2" StartPoint="0,0" EndPoint="1,1">
-        <GradientStop Color="#161627" Offset="0" />
-        <GradientStop Color="#272740" Offset="0.5" />
-        <GradientStop Color="#1C1C2C" Offset="1" />
+        <GradientStop Color="#FFFFFF" Offset="0" />
+        <GradientStop Color="#A5A5A5" Offset="0.10" />
+        <GradientStop Color="#FFFFFF" Offset="1" />
     </LinearGradientBrush>
 
     <Style TargetType="Border" x:Key="brd1">

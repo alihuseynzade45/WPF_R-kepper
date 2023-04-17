@@ -16,19 +16,38 @@
                 <Grid>
 
                     <Button Style="{StaticResource OrderModel}" Margin="0,0,590,250" Height="250" Width="250" Click="KotletBtn_Click" >
-                        <Image Source="images/kotlet.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/kotlet.png" Width="250" Height="250" ></Image>
+                            <Label Margin="0,155,0,0" Content="ƏT KOTLETLƏRİ 9₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="10,0,0,250" Height="250" Width="250" Click="TavakabakiBtn_Click">
-                        <Image Source="images/tavakababi.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/tavakababi.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="TAVA KABABI 14₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="600,0,0,250" Height="250" Width="250" Click="QuzusoganetBtn_Click">
-                        <Image Source="images/quzusoganet.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/quzusoganet.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="QUZU SOĞAN 18₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="0,280,300,0" Height="250" Width="250" Click="QuzubaldiriqovurmaBtn_Click">
-                        <Image Source="images/quzubaldirqovurma.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/quzubaldirqovurma.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="QUZU BALDIR 18₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                      
                     <Button Style="{StaticResource OrderModel}" Margin="270,280,0,0" Height="250" Width="250" Click="FettuciniBtn_Click">
+                        <Grid>
                         <Image Source="images/fettucini.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="FETTUÇİNİ 12₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
                     
                 </Grid>
@@ -38,22 +57,46 @@
                     <Grid>
 
                         <Button Style="{StaticResource OrderModel}" Margin="0,0,590,250" Height="250" Width="250" Click="DanabastirmaBtn_Click">
-                            <Image Source="images/danabastirma.png" Width="250" Height="250" />
+                            <Grid>
+                                <Image Source="images/danabastirma.png" Width="250" Height="250" />
+                                <Label Margin="0,155,0,0" Content="DANA BASDIRMASI 12₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                            </Grid>
                         </Button>
+                        
                         <Button Style="{StaticResource OrderModel}" Margin="10,0,0,250" Height="250" Width="250" Click="XankebabiBtn_Click">
-                            <Image Source="images/xankebabi.png" Width="250" Height="250" />
+                            <Grid>
+                                <Image Source="images/xankebabi.png" Width="250" Height="250" />
+                                <Label Margin="0,155,0,0" Content="XAN KABABI 6₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                            </Grid>
                         </Button>
+                        
                         <Button Style="{StaticResource OrderModel}" Margin="600,0,0,250" Height="250" Width="250" Click="LulekebabBtn_Click">
-                            <Image Source="images/lulekebab.png" Width="250" Height="250" />
+                            <Grid>
+                                <Image Source="images/lulekebab.png" Width="250" Height="250" />
+                                <Label Margin="0,155,0,0" Content="LÜLƏ KABAB 7₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                            </Grid>
                         </Button>
+                        
                         <Button Style="{StaticResource OrderModel}" Margin="0,280,590,0" Height="250" Width="250" Click="QuzuantrikorBtn_Click">
-                            <Image Source="images/quzuantrikot.png" Width="250" Height="250" />
+                            <Grid>
+                                <Image Source="images/quzuantrikot.png" Width="250" Height="250" />
+                                <Label Margin="0,155,0,0" Content="QUZU ANTREKOT 9₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                            </Grid>
                         </Button>
+                        
                         <Button Style="{StaticResource OrderModel}" Margin="10,280,0,0" Height="250" Width="250" Click="QuzukebabiBtn_Click">
-                            <Image Source="images/quzukebab.png" Width="250" Height="250" />
+                            <Grid>
+                                <Image Source="images/quzukebab.png" Width="250" Height="250" />
+                                <Label Margin="0,155,0,0" Content="QUZU KABABI 7₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                            </Grid>
+
                         </Button>
+                        
                         <Button Style="{StaticResource OrderModel}" Margin="600,280,0,0" Height="250" Width="250" Click="ToyuqlulesiBtn_Click">
-                            <Image Source="images/toyuqlulesi.png" Width="250" Height="250" />
+                            <Grid>
+                                <Image Source="images/toyuqlulesi.png" Width="250" Height="250" />
+                                <Label Margin="0,155,0,0" Content="TOYUQ LÜLƏSİ 7₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                            </Grid>
                         </Button>
                         
                     </Grid>
@@ -63,22 +106,45 @@
                 <Grid>
 
                     <Button Style="{StaticResource OrderModel}" Margin="0,0,590,250" Height="250" Width="250" Click="DusbereBtn_Click">
+                        <Grid>
                         <Image Source="images/dusbere.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="DÜŞBƏRƏ 5₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="10,0,0,250" Height="250" Width="250" Click="GobeleksorbasiBtn_Click">
-                        <Image Source="images/gobeleksorbasi.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/gobeleksorbasi.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="GÖBƏLƏK ŞORBASI 5₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="600,0,0,250" Height="250" Width="250" Click="GurzesorbasiBtn_Click">
-                        <Image Source="images/gurzesorbasi.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/gurzesorbasi.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="GÜRZƏ ŞORBASI 8₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="0,280,590,0" Height="250" Width="250" Click="Gobeleksorbasi2Btn_Click">
-                        <Image Source="images/gobeleksorbasi2.png" Width="250" Height="250" Stretch="Fill"  />
+                        <Grid>
+                            <Image Source="images/gobeleksorbasi2.png" Width="250" Height="250" Stretch="Fill"/>
+                            <Label Margin="0,155,0,0" Content="GÖBƏLƏK ŞORBASI 5₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
+
                     </Button>
                     <Button Style="{StaticResource OrderModel}" Margin="10,280,0,0" Height="250" Width="250" Click="KoksorbasiBtn_Click">
-                        <Image Source="images/koksorbasi.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/koksorbasi.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="KÖK ŞORBASI 4₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="600,280,0,0" Height="250" Width="250" Click="KartofsorbasiBtn_Click">
-                        <Image Source="images/kartofsorbasi.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/kartofsorbasi.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="KARTOF ŞORBASI 4₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
                     
                 </Grid>
@@ -87,46 +153,92 @@
                 <Grid>
 
                     <Button  Style="{StaticResource OrderModel}" Margin="0,0,590,250" Height="250" Width="250" Click="TunabaligisalatiBtn_Click">
-                        <Image Source="images/tunabaligisalati.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/tunabaligisalati.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="TUNA SALATI 9₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="10,0,0,250" Height="250" Width="250" Click="SezarsalatiBtn_Click">
-                        <Image Source="images/sezarsalati.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/sezarsalati.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="SEZAR SALATI 15₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="600,0,0,250" Height="250" Width="250" Click="CikenbluzBtn_Click">
-                        <Image Source="images/cikenbluz.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/cikenbluz.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="ÇİKEN BLUZ 10₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="0,280,590,0" Height="250" Width="250" Click="CugundursalatiBtn_Click">
-                        <Image Source="images/cugundursalati.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/cugundursalati.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="ÇUĞUNDUR SALATI 11₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="10,280,0,0" Height="250" Width="250" Click="CobansalatiBtn_Click">
-                        <Image Source="images/cobansalati.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/cobansalati.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="ÇOBAN SALATI 6₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="600,280,0,0" Height="250" Width="250" Click="YunansalatiBtn_Click">
-                        <Image Source="images/yunansalati.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/yunansalati.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="YUNAN SALATI 7₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
                     
                 </Grid>
             </TabItem>
             <TabItem  Header="Soyuq qəlyanaltılar">
                 <Grid>
-
+                    
                     <Button  Style="{StaticResource OrderModel}" Margin="0,0,590,250" Height="250" Width="250" Click="TursularBtn_Click">
+                        <Grid>
                         <Image Source="images/tursular.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="TURŞU ÇEŞİDİ 5₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="10,0,0,250" Height="250" Width="250" Click="TerevezlerBtn_Click">
-                        <Image Source="images/terevezler.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/terevezler.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="TƏRƏVƏZ ÇEŞİDİ 5₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="600,0,0,250" Height="250" Width="250" Click="PendirlerBtn_Click">
-                        <Image Source="images/pendirler.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/pendirler.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="PENDİR ÇEŞİDİ 7₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="0,280,590,0" Height="250" Width="250" Click="ToyuqruletiBtn_Click">
-                        <Image Source="images/toyuqruleti.png" Width="250" Height="250" />
+                        <Grid>
+                          <Image Source="images/toyuqruleti.png" Width="250" Height="250" />
+                          <Label Margin="0,155,0,0" Content="TOYUQ RULETİ 5₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+
                     <Button Style="{StaticResource OrderModel}" Margin="10,280,0,0" Height="250" Width="250" Click="HumusBtn_Click">
-                        <Image Source="images/humus.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/humus.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="HUMUS 5₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="600,280,0,0" Height="250" Width="250" Click="BruskettaBtn_Click">
-                        <Image Source="images/brusketta.png" Width="250" Height="250" />
+                        <Grid>
+                            <Image Source="images/brusketta.png" Width="250" Height="250" />
+                            <Label Margin="0,155,0,0" Content="BRUSKETTA 8₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
                     
                 </Grid>
@@ -135,22 +247,46 @@
                 <Grid>
 
                     <Button  Style="{StaticResource OrderModel}" Margin="0,0,590,250" Height="250" Width="250" Click="WatermelonslushieBtn_Click">
-                        <Image Source="images/watermelonslushie.png" Width="250" Height="250" Stretch="Fill" />
+                        <Grid>
+                            <Image Source="images/watermelonslushie.png" Width="250" Height="250" Stretch="Fill" />
+                            <Label Margin="0,155,0,0" Content="WATERMELON JUS 5₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="10,0,0,250" Height="250" Width="250" Click="LechemilkshakeBtn_Click">
-                        <Image Source="images/lechemilkshake.png" Width="250" Height="250" Stretch="Fill"/>
+                        <Grid>
+                            <Image Source="images/lechemilkshake.png" Width="250" Height="250" Stretch="Fill"/>
+                            <Label Margin="0,155,0,0" Content="LECHE MILKSHAKE 6₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="600,0,0,250" Height="250" Width="250" Click="MojitoBtn_Click">
-                        <Image Source="images/mojito.png" Width="250" Height="250" Stretch="Fill"/>
+                        <Grid>
+                            <Image Source="images/mojito.png" Width="250" Height="250" Stretch="Fill"/>
+                            <Label Margin="0,155,0,0" Content="MOJITO 6₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="0,280,590,0" Height="250" Width="250" Click="WiskyBtn_Click">
-                        <Image Source="images/wisky.png" Width="250" Height="250" Stretch="Fill"/>
+                        <Grid>
+                            <Image Source="images/wisky.png" Width="250" Height="250" Stretch="Fill"/>
+                            <Label Margin="0,155,0,0" Content="WISKY 10₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                
                     <Button Style="{StaticResource OrderModel}" Margin="10,280,0,0" Height="250" Width="250" Click="WhineBtn_Click">
-                        <Image Source="images/whine.png" Width="250" Height="250" Stretch="Fill"/>
+                        <Grid>
+                            <Image Source="images/whine.png" Width="250" Height="250" Stretch="Fill"/>
+                            <Label Margin="0,155,0,0" Content="WHINE 15₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
+                    
                     <Button Style="{StaticResource OrderModel}" Margin="600,280,0,0" Height="250" Width="250" Click="MartiniBtn_Click">
-                        <Image Source="images/martini.png" Width="250" Height="250" Stretch="Fill"/>
+                        <Grid>
+                            <Image Source="images/martini.png" Width="250" Height="250" Stretch="Fill"/>
+                            <Label Margin="0,155,0,0" Content="MARTINI 9₼" Style="{StaticResource LabelAnimationStyle}"></Label>
+                        </Grid>
                     </Button>
                     
                 </Grid>
